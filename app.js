@@ -897,8 +897,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Aggiungi un event listener che si attiverà una sola volta
         newStartBtn.addEventListener('click', () => {
-            alert("THIS IS MY MODIFIED JS FILE😈.");
-            //performSmartXpSearch(currentSearchCard);
+            performSmartXpSearch(currentSearchCard);
         }, { once: true });
     }
     function getAvailableItemsForChest(chestType, eventType = null) {
