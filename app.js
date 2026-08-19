@@ -896,9 +896,19 @@ document.addEventListener('DOMContentLoaded', () => {
         startBtn.parentNode.replaceChild(newStartBtn, startBtn);
 
         // Aggiungi un event listener che si attiverà una sola volta
-        newStartBtn.addEventListener('click', () => {
-            performSmartXpSearch(currentSearchCard);
-        }, { once: true });
+        newStartBtn.addEventListener('click', async () => {
+    try {
+        console.log("Smart XP clicked");
+        console.log("Card:", currentSearchCard);
+
+        await performSmartXpSearch(currentSearchCard);
+
+        console.log("Smart XP finished");
+    } catch (error) {
+        console.error("SMART XP ERROR:", error);
+        alert("Smart XP error: " + error.message);
+    }
+}, { once: true });;
     }
     function getAvailableItemsForChest(chestType, eventType = null) {
         const availableItems = new Set();
