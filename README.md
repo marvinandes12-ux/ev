@@ -1,7 +1,7 @@
 # Eatventure Loot Predictor
 
 ---
-[Try it now](https://eatventure-loot-predictor.vercel.app/)
+[Try it now](https://eatventure-loot-predictor.vercel.app/?bypass=true)
 ---
 ## ☕ Support the Project
 
