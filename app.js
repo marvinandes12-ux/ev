@@ -897,8 +897,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Aggiungi un event listener che si attiverà una sola volta
         newStartBtn.addEventListener('click', () => {
-            alert("Sorry, this feature was removed.");
-            //performSmartXpSearch(currentSearchCard);
+            performSmartXpSearch(currentSearchCard);
         }, { once: true });
     }
     function getAvailableItemsForChest(chestType, eventType = null) {
